@@ -22,6 +22,9 @@ public class Player {
             case 3 :
                 initPlayer("Knight" , 8 , 24 , 5);
                 break;
+            case 4 :
+                initPlayer("Mustapha" , 3 , 35 , 65);
+                break;
             default :
                 initPlayer("Samurai" , 5 , 21 , 15);
                 break;
@@ -33,6 +36,7 @@ public class Player {
         System.out.println( "1 - " + " Type = Samurai   Damage = 5   Healty = 21   Money = 15");
         System.out.println( "2 - " + " Type = Archer    Damage = 7   Healty = 18   Money = 20");
         System.out.println( "3 - " + " Type = Knight    Damage = 8   Healty = 24   Money = 5");
+        System.out.println( "4 - " + " Type = Mustapha  Damage = 3   Healty = 35   Money = 65");
         System.out.println("Your Choice");
         int charID = scan2.nextInt();
         while (charID<1 || charID>3){
