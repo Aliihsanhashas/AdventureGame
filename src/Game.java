@@ -8,7 +8,9 @@ public class Game {
 
     public void login(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Welcome to Adventure Game !!!!");
+        System.out.println("Created by Aliihsanhashas ");
+        System.out.println("Contact : aliihsanhashas1@hotmail.com");
+        System.out.println("Welcome to Adventure Game !!!!!!!!");
         System.out.println("Enter your game before startıng the game...");
         String PlayerName = scan.nextLine();
         player = new Player(PlayerName);
@@ -16,7 +18,7 @@ public class Game {
         start();
     }
     public void start(){
-        while (true){                   // Ölmediğimiz sürece oyunu devam ettirecek döngü.
+        while (true){                   // play while character is alive 
             System.out.println();
             System.out.println("============================================");
             System.out.println();
