@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Player {
 
-    private int damage,health,money,rHealthy,;
+    private int damage,health,money,rHealthy;
     private String name,cName;
     private Inventory ınventory;
     Scanner scan2 = new Scanner(System.in);
