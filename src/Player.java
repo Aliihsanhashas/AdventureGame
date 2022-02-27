@@ -39,7 +39,7 @@ public class Player {
         System.out.println( "4 - " + " Type = Mustapha  Damage = 3   Healty = 35   Money = 65");
         System.out.println("Your Choice");
         int charID = scan2.nextInt();
-        while (charID<1 || charID>3){
+        while (charID<1 || charID>4){
             System.out.println(" Please enter a valid number ");
             charID = scan2.nextInt();
         }
