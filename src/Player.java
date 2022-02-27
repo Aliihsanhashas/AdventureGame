@@ -63,15 +63,19 @@ public class Player {
     }
 
     public int getHealth(){
-        return health;
+        return this.health;
     }
 
     public void setHealth(int health){
         this.health = health;
     }
 
+    public void payarenaFee(int arenaFee){
+        this.money = this.money-arenaFee;
+    }
+
     public int getMoney(){
-        return money;
+        return this.money;
     }
 
     public void setMoney(int money){
