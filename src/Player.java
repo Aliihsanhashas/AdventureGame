@@ -9,6 +9,7 @@ public class Player {
 
     public Player(String name){
         this.name = name;
+        this.ınventory = new Inventory();
     }
 
     public void selectChar(){
@@ -30,6 +31,9 @@ public class Player {
                 break;
         }
         System.out.println(" Character = " + getcName() + " -- Damage = " + getDamage() + " -- Healty = " + getHealth() + " -- Money = " + getMoney());
+    }
+    public int getTotalDamage(){
+        return this.getDamage() + this.ınventory.getDamage();
     }
     public int CharMenu(){
         System.out.println("Please select a character !!!");
@@ -68,10 +72,6 @@ public class Player {
 
     public void setHealth(int health){
         this.health = health;
-    }
-
-    public void payarenaFee(int arenaFee){
-        this.money = this.money-arenaFee;
     }
 
     public int getMoney(){

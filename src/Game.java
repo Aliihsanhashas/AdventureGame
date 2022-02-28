@@ -28,11 +28,10 @@ public class Game {
             System.out.println("3.The Forest -------> You may encounter a vampire");
             System.out.println("4. The River --------> you may encounter a bear");
             System.out.println("5.Market Place ------> you can shop");
-            System.out.println("6.Arena ----------> you can fight");
             System.out.println("Where you want to go");
 
             int selLoc = scan3.nextInt();
-            while (selLoc<1 || selLoc>6){
+            while (selLoc<1 || selLoc>5){
                 System.out.println("Please a valid number");
                 selLoc = scan3.nextInt();
             }
@@ -41,8 +40,8 @@ public class Game {
                 case 1 :
                     location = new SafeHouse(player);
                     break;
-                case 6:
-                    location = new Arena(player);
+                case 5:
+                    location = new MarketPlace(player);
                     break;
                 default:
                     location = new SafeHouse(player);
