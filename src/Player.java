@@ -32,9 +32,6 @@ public class Player {
         }
         System.out.println(" Character = " + getcName() + " -- Damage = " + getDamage() + " -- Healty = " + getHealth() + " -- Money = " + getMoney());
     }
-    public int getTotalDamage(){
-        return this.getDamage() + this.ınventory.getDamage();
-    }
     public int CharMenu(){
         System.out.println("Please select a character !!!");
         System.out.println( "1 - " + " Type = Samurai   Damage = 5   Healty = 21   Money = 15");
@@ -49,7 +46,9 @@ public class Player {
         }
         return charID;
     }
-
+    public int getTotalDamage(){
+        return this.getMoney() + this.getInventory().getDamage();
+    }
     public void initPlayer(String cname , int dmg , int hlty , int mny){
         setcName(cname);
         setDamage(dmg);

@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class MarketPlace extends NormalLock {
     MarketPlace(Player player) {
         super(player, "Market Place");
     }
+    Scanner scan12 = new Scanner(System.in);
 
     public boolean getLocation(){
         System.out.println("Money = " + getPlayer().getMoney());
@@ -115,7 +118,7 @@ public class MarketPlace extends NormalLock {
                 player.getInventory().setDamage(damage);
                 player.getInventory().setwName(wName);
                 player.setMoney(player.getMoney()-price);
-                System.out.println("Weapon is purchased. Your before damage = " + player.getDamage() + " " +"Your new damage = " + " " + player.getTotalDamage());
+                System.out.println("Weapon is purchased. Your before damage = " + player.getDamage() + " " +"Your new damage = " + " " + (player.getDamage() + player.getInventory().getDamage()));
                 System.out.println("Remaning Money = " + player.getMoney());
             }else{
                 System.out.println("Not enoght money !!!!");

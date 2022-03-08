@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class Forest {
+public class Forest extends BattleLock{
+
+    Forest(Player player) {
+        super(player,"cave",new Vampir());
+    }
 }

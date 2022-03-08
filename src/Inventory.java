@@ -9,8 +9,8 @@ public class Inventory {
         this.fireWood = false;
         this.damage = 0;
         this.armor = 0;
-        this.wName = null;
-        this.aName = null;
+        this.wName = "NOTHİNG";
+        this.aName = "NOTHİNG";
     }
 
     public boolean isWater() {
